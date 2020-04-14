@@ -1,0 +1,15 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-supportlocalwebapp-prod-181733-authRole",
+            "UnauthRoleArn": "arn:aws:iam::566416766292:role/amplify-supportlocalwebapp-prod-181733-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::566416766292:role/amplify-supportlocalwebapp-prod-181733-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-supportlocalwebapp-prod-181733-deployment",
+            "UnauthRoleName": "amplify-supportlocalwebapp-prod-181733-unauthRole",
+            "StackName": "amplify-supportlocalwebapp-prod-181733",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:566416766292:stack/amplify-supportlocalwebapp-prod-181733/2a12c410-7e39-11ea-bb43-06cd2d6445ec",
+            "AmplifyAppId": "d13q2nn9jc86ip"
+        }
+    }
+}
