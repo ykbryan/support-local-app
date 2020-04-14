@@ -4,6 +4,7 @@ import './App.scss';
 
 import Home from './screens/Home';
 import About from './screens/About';
+import Userform from './screens/About';
 import Banners from './components/Banners';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -23,6 +24,9 @@ export default function App() {
             <Switch>
               <Route path='/about'>
                 <About />
+              </Route>
+              <Route path='/form'>
+                <Userform />
               </Route>
               <Route path='/:merchantName'>
                 <Home />

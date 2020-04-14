@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 export default function Home() {
   let { merchantName } = useParams();
@@ -89,6 +90,41 @@ export default function Home() {
           </Button>
         </Col>
       </Row>
+      <Form id='filterForm'>
+        <Row>
+          <Col xs={3}>
+            <Form.Group
+              className='filterCuisine'
+              as={Col}
+              controlId='formSelectCuisine'
+            >
+              <Form.Control as='select' value='Choose Cuisine'>
+                <option>Choose Cuisine</option>
+                <option>...</option>
+              </Form.Control>
+            </Form.Group>
+          </Col>
+          <Col xs={3}>
+            <Form.Group
+              className='filterLocation'
+              as={Col}
+              controlId='formSelectLocation'
+            >
+              <Form.Control as='select' value='Choose Location'>
+                <option>Choose Location</option>
+                <option>...</option>
+              </Form.Control>
+            </Form.Group>
+          </Col>
+          <Col xs={3}>
+            <Form.Group className='filterPrice' controlId='formPriceRange'>
+              <Form.Label>Min Order</Form.Label>
+              <Form.Control type='range' value='100' />
+              <Form.Label>$100</Form.Label>
+            </Form.Group>
+          </Col>
+        </Row>
+      </Form>
       <Row className='list-merchants'>
         <Col xs={6}>
           <Card className='merchant-card'>
