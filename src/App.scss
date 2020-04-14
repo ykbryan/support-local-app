@@ -1,1 +1,56 @@
 @import '~bootstrap/scss/bootstrap';
+
+#selections button.active {
+  background-color: #f9e282;
+  color: #333;
+}
+
+#selections button {
+  border-radius: 20px;
+}
+
+.list-merchants {
+  margin-top: 20px;
+
+  .merchant-card {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    img.card-img-top {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    div.merchant-icon {
+      width: 70px;
+      float: right;
+      text-align: center;
+    }
+    div.merchant-menu {
+      float: left;
+      margin: 15px 10px 15px 0;
+    }
+    div.merchant-actions {
+      float: right;
+      img {
+        margin: 10px 0px 10px 10px;
+      }
+    }
+  }
+}
+
+footer {
+  overflow: hidden;
+  text-align: center;
+  ul {
+    margin: auto;
+    display: inline-block;
+    overflow: hidden;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    li {
+      float: left;
+      margin: 20px;
+      padding: 15px 20px;
+    }
+  }
+}
