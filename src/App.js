@@ -7,6 +7,7 @@ import {
   useRouteMatch,
   useParams,
 } from 'react-router-dom';
+import './App.scss';
 
 export default function App() {
   return (
