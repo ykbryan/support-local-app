@@ -92,7 +92,7 @@ export default function Home() {
       </Row>
       <Form id='filterForm'>
         <Row>
-          <Col xs={3}>
+          <Col xs={12} md={3}>
             <Form.Group
               className='filterCuisine'
               as={Col}
@@ -104,7 +104,7 @@ export default function Home() {
               </Form.Control>
             </Form.Group>
           </Col>
-          <Col xs={3}>
+          <Col xs={12} md={3}>
             <Form.Group
               className='filterLocation'
               as={Col}
@@ -116,7 +116,7 @@ export default function Home() {
               </Form.Control>
             </Form.Group>
           </Col>
-          <Col xs={3}>
+          <Col xs={12} md={6}>
             <Form.Group className='filterPrice' controlId='formPriceRange'>
               <Form.Label>Min Order</Form.Label>
               <Form.Control type='range' value='100' />
@@ -126,7 +126,7 @@ export default function Home() {
         </Row>
       </Form>
       <Row className='list-merchants'>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <Card className='merchant-card'>
             <Card.Body>
               <div className='merchant-icon'>
@@ -167,7 +167,7 @@ export default function Home() {
             </Card.Footer>
           </Card>
         </Col>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <Card className='merchant-card'>
             <Card.Body>
               <div className='merchant-icon'>
@@ -208,7 +208,7 @@ export default function Home() {
             </Card.Footer>
           </Card>
         </Col>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <Card className='merchant-card'>
             <Card.Body>
               <div className='merchant-icon'>
@@ -249,7 +249,48 @@ export default function Home() {
             </Card.Footer>
           </Card>
         </Col>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
+          <Card className='merchant-card'>
+            <Card.Body>
+              <div className='merchant-icon'>
+                <Card.Img src='https://supportlocal.sg/assets/img/meals.svg' />
+                <span>Chinese</span>
+              </div>
+              <Card.Title>Tiong Bahru Yong Toufu</Card.Title>
+              <Card.Text>
+                <p>
+                  Tel: 85006968 <br />
+                  Min. Order: $20 <br />
+                  Delivers: Islandwide
+                </p>
+                <strong>Delivery Info</strong>
+                <p>
+                  $5, Free delivery for orders $60 and above Place your orders
+                  by 11am for same day delivery by 6pm! For orders placed after
+                  11am, delivery will be on next day by 6pm.
+                </p>
+              </Card.Text>
+              <Button variant='primary'>Go somewhere</Button>
+            </Card.Body>
+            <Card.Footer>
+              <div className='merchant-menu'>
+                <a href='#'>View Menu</a>
+              </div>
+              <div className='merchant-actions'>
+                Order via
+                <img
+                  alt='facebook'
+                  src='https://supportlocal.sg/whatsapp.127292b1dcabc8e15879.svg'
+                />
+                <img
+                  alt='facebook'
+                  src='https://supportlocal.sg/facebook.4c1b11a198118002a89d.svg'
+                />
+              </div>
+            </Card.Footer>
+          </Card>
+        </Col>
+        <Col xs={12} md={6}>
           <Card className='merchant-card'>
             <Card.Body>
               <div className='merchant-icon'>
